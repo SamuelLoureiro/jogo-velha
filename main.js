@@ -16,6 +16,12 @@ tab[i]=[3];
 }
 
 while ((jogadas<9)&&(fimJogo==false)){
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            process.stdout.write(`[${tab[i][j]}] `);
+        }
+        console.log(); 
+    }
     lin= parseInt(prompt(`${jogador} em [linha]: `));
     col=parseInt(prompt(`${jogador} em [coluna]: `));
 }
